@@ -26,7 +26,7 @@ Run the command :
 
 - Commands:
 
-1. run tests -> ``` npm run test ```
+1. run tests -> ``` npm run test or npm test```
 2. run dev mode -> ``` npm run dev ```
 3. run to build -> ``` npm run build ```
 4. run to start builded version -> ``` npm run start```

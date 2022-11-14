@@ -5,16 +5,22 @@ const should = chai.should();
 
 chai.use(chaiHttp);
 
-describe('movies api test', function () {
+describe('api test', function () {
     after((done) => {
         console.log("\n\n-- FINISHED TEST --")
         done()
     })
 
-    it('should get all movies', async () => {
-        const response = await chai.request(server).get('/api/movies/')
+    it('should get all files', async () => {
+        const response = await chai.request(server).get('/files/data/')
         response.should.have.status(200);
-        response.body.length.should.eql(200)
     });
+
+
+    it('should get files list', async () => {
+        const response = await chai.request(server).get('/files/list/')
+        response.should.have.status(200);
+    });
+
 
 });
